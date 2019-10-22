@@ -32,6 +32,8 @@ app.get('/api/timestamp/:datetime', function(req, res){
     date = req.params.datetime;
   else if (!isNaN(new Date(req.params.datetime).getTime()))
     date = new Date(req.params.datetime);
+  else if (!isNaN(parseInt(new Date(req.params.datetime)*1000)))
+    date = new Date(parseInt(new Date(req.params.datetime))*1000);
   else
     return res.json({error: 'Invalid Date'});
   return res.json({unix: date.getTime(), utc: date.toUTCString()});
