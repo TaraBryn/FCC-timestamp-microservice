@@ -25,7 +25,7 @@ app.get("/api/hello", function (req, res) {
 });
 
 app.get('/api/timestamp/:datetime', function(req, res){
-  
+  if (Date.isDate(req.params.datetime))
 });
 
 
