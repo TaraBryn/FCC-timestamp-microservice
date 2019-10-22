@@ -25,7 +25,6 @@ app.get("/api/hello", function (req, res) {
 });
 
 app.get('/api/timestamp/:datetime', function(req, res){
-  if 
   var date;
   if (!isNaN(new Date(req.params.datetime)))
     date = new Date(req.params.datetime);
