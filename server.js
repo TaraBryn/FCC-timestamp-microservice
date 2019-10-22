@@ -31,11 +31,11 @@ app.get('/api/timestamp/:datetime', function(req, res){
   if (isNaN(new Date(date))){
     return res.json({error: 'Invalid Date'});
   }
-  return res.json({unix: new Date(date), utc: new Date(date).toString()});
+  return res.json({unix: new Date(date).getTime(), utc: new Date(date).toUTCString()});
 });
 
 app.get('/api/timestamp/', function(req, res){
-  return res.json({unix: new Date(), utc: new Date().toString()});
+  return res.json({unix: new Date().getTime(), utc: new Date().toUTCString()});
 });
 
 
