@@ -25,7 +25,11 @@ app.get("/api/hello", function (req, res) {
 });
 
 app.get('/api/timestamp/:datetime', function(req, res){
-  if (Date.isDate(req.params.datetime))
+  var date = req.params.datetime;
+  if (isNaN(date.getTime())){
+    return res.json({error: 'Invalid Date'});
+  }
+  return res.json({unix: new Date(date), utc: new Date(date).toString()});
 });
 
 
