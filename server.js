@@ -1,8 +1,6 @@
 // server.js
 // where your node app starts
-var $ = require('popper.js')
-var $ = require('bootstrap');
-var $ = require('jquery');
+
 // init project
 var express = require('express');
 var app = express();
