@@ -10,7 +10,6 @@
   </head>
 
    <body>
-     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
      
       <div class="container">
         <h2>API Project: Timestamp Microservice</h2>
@@ -19,7 +18,7 @@
         <input class="form-control" id="time-input" placeholder="enter date here"/>
           <button 
                   class="btn btn-primary"
-                  onclick="window.open(`https://tarabryn-timestamp-microserice.glitch.me/api/timestamp/${$('time-input').value}`)">
+                  onclick="window.open(`https://tarabryn-timestamp-microserice.glitch.me/api/timestamp/${$('#time-input').val()}`)">
             Submit
           </button>
         </form>
