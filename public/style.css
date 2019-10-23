@@ -12,6 +12,15 @@ body {
 .container {
 	padding: 0;
 	margin-top: 40px;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+
+form{
+  display: grid;
+  justify-content: center;
+  justify-items: center;
 }
 
 h3 {
