@@ -1,6 +1,7 @@
 // server.js
 // where your node app starts
-
+require('jquery');
+require('bootstrap');
 // init project
 var express = require('express');
 var app = express();

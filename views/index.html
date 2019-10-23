@@ -7,23 +7,22 @@
       <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
       <link href="style.css" rel="stylesheet" type="text/css">
-   </head>
-  
-  <form>
-    <input class="form-control" id="time-input" placeholder="enter date here"/>
-    <button 
-            class="btn btn-primary"
-            onclick="function(){
-                     if ($('#time-input'))
-                     }">
-      Submit
-    </button>
-  </form>
+  </head>
 
    <body>
 
       <div class="container">
         <h2>API Project: Timestamp Microservice</h2>
+        
+        <form>
+        <input class="form-control" id="time-input" placeholder="enter date here"/>
+          <button 
+                  class="btn btn-primary"
+                  onclick="window.open(`https://tarabryn-timestamp-microserice.glitch.me/api/timestamp/${$('time-input').value}`)">
+            Submit
+          </button>
+        </form>
+        
         <h3>User Stories :</h3>
         <ol class="user-stories">
           
